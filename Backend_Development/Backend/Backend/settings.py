@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wd9%8l&jo(7h1985wz+l4-%s*%^kmy&^4z_xb5l5dfers54$a8'
+SECRET_KEY = '!xynmd1k^3+2o_tt+1gb-l&344o()k+=06s*$q+w*yx3v8hi0('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users'
 ]
 
 MIDDLEWARE = [
@@ -76,10 +75,8 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pocketguide',
-        'USER': 'pguide',
-        'PASSWORD': 'pguide'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
