@@ -1,1 +1,1 @@
-# VirtualTourGuide-Dev
+# PocketGuide-Dev
