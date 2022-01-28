@@ -73,10 +73,12 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pocketguide',
-        'USER': 'vguideuser',
-        'PASSWORD': 'vguideuser',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Users',
+        'USER': 'postgres',
+        'PASSWORD': 'cjk',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
