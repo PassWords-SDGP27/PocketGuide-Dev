@@ -5,5 +5,5 @@ from . import views  # import views from the current directory
 
 urlpatterns = [
     path("", views.index, name="index"),  # serves the http response named index in views.py file
-    path("user/", views.RegisterView.as_view()),
+    path("register/", views.RegisterView.as_view()),
 ]
