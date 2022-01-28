@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 class Roles(models.TextChoices):
     SUPER_ADMIN = 'SUPER_ADMIN', _('SUPER_ADMIN')
     ADMIN = 'ADMIN', _('ADMIN')
-    SERVICE_PROVIDER = 'SERVICE_PROVIDER', _('SERVICE_PROVIDER')
+    # SERVICE_PROVIDER = 'SERVICE_PROVIDER', _('SERVICE_PROVIDER')???
     USER = 'USER', _('USER')
 
 
