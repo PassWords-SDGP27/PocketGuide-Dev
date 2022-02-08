@@ -18,8 +18,8 @@ List<DestinationModel> destinations = destinationsData
 var destinationsData = [
   
   {
-    "name": "Ella, Sri Lanka",
-    "tagLine": "Paradise With Beauty ",
+    "name": "Ella,Sri Lanka",
+    "tagLine": "Paradise With Beauty",
     "image":
     "https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     "images": [
