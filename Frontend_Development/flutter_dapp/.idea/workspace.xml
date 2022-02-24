@@ -33,9 +33,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,11 +61,46 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Solidity.User.createUser">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="User.createUser" type="SolidityConfigurationType" factoryName="Solidity" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="flutter_dapp" />
+      <option name="VMParameters" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <option name="workingDirectory" value="" />
+      <option name="contractName" value="User" />
+      <option name="contractFile" value="$PROJECT_DIR$/contracts/User.sol" />
+      <option name="functionName" value="createUser" />
+      <option name="vmParameters" />
+      <option name="programParameters" />
+      <option name="workingDirectory" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="ajreEnabled" value="false" />
+      <option name="ajre" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Solidity.User.createUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
