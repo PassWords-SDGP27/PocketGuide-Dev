@@ -1,10 +1,12 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.8.11;
 
 contract Location {
     event NewLocation(uint locationId, string name);
 
-    struct Location{
-        string locationName;
+    string locationName;
+
+    constructor(string _name) Location{
+        locationName = name;
     }
 
     //array to store all locations
