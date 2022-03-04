@@ -52,6 +52,6 @@ var recommendationsData = [
       "https://i.pinimg.com/564x/11/ae/bb/11aebbe29dd95ee4d09d19754e380d9a.jpg"
     ],
     "description":
-    "This genteel highland community does have a rose-tinted, vaguely British-country-village feel to it.",
+    "This gentle highland community does have a rose-tinted, vaguely British-country-village feel to it.",
   },
 ];
