@@ -24,6 +24,14 @@ contract Location {
         //emit NewLocation(_name);
     }
 
+    function deleteLocation (string memory _locName) external {
+        uint locId = findLocation(_locName);
+
+        if (locId != -1){
+            delete locations[locId];
+        }
+    }
+
 
     function addDescription() public{
 
