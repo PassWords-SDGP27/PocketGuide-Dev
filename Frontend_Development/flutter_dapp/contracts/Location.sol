@@ -24,6 +24,15 @@ contract Location {
         //emit NewLocation(_name);
     }
 
+    function findLocation (string memory _locationName) external returns (uint){
+        for (uint i=0; i<locations.length; i++){
+            if(locations[i].locationName == _locationName){
+                return i;
+            }
+        }
+        return -1;
+    }
+
     function deleteLocation (string memory _locName) external {
         uint locId = findLocation(_locName);
 
