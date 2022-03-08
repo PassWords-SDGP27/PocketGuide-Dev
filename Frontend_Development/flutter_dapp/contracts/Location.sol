@@ -36,4 +36,13 @@ contract Location {
         }
         return "Location not found!";
     }
+
+    //Delete a location from locations array
+    function deleteLocation (string memory _locName) external {
+        uint locId = findLocation(_locName);
+
+        if (!(locId >= locations.length)){
+            delete locations[locId];
+        }
+    }
 }
