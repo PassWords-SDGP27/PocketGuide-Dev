@@ -7,13 +7,14 @@ contract UserContract {
     struct User {
         string email;
         string username;
+        string password;
         string tellNo;
         bool set; // This boolean is used to differentiate between unset and zero struct values
     }
 
     mapping(address => User) public users;
 
-    function createUser(string memory _email, string memory _username, string memory _tellNo) public {
+    function createUser(string memory _email, string memory _username, string memory _password, string memory _tellNo) public {
         address _userAddress = msg.sender;
 
         User storage user = users[_userAddress];
@@ -24,6 +25,7 @@ contract UserContract {
         users[_userAddress] = User({
         email: _email,
         username: _username,
+        password: _password,
         tellNo: _tellNo,
         set: true
         });
