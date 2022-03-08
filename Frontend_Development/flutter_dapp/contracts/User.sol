@@ -1,13 +1,29 @@
-pragma solidity ^0.4.0;
+// SPDX-License-Identifier:MIT
 
-contract User {
-    event NewUser(string username);//inform frontend that new user was created
+pragma solidity ^0.8.7;
 
-    string public username;
-    //Other required fields?
+contract UserContract {
 
-    function createUser(string memory _username) private {
-        username = _username;
-        emit NewUser(_username);//fire the event
+    struct User {
+        uint id;
+        string name;
+        bool set; // This boolean is used to differentiate between unset and zero struct values
+    }
+
+    mapping(address => User) public users;
+
+    function createUser(uint _userId, string memory _userName) public {
+        address _userAddress = msg.sender;
+
+        User storage user = users[_userAddress];
+
+        require(!user.set); // Check that the user did not already exist:
+
+        //Save user
+        users[_userAddress] = User({
+        id: _userId,
+        name: _userName,
+        set: true
+        });
     }
 }
