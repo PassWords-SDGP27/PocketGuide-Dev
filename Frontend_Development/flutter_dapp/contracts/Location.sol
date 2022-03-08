@@ -27,4 +27,11 @@ contract Location {
         }
         return locations.length;//return size of array if location name NOT FOUND
     }
+
+    //Returns description of relevant location
+    function viewDesc (string memory _locationName) external view returns (string memory){
+        uint locId = findLocation(_locationName);
+        require(!(locId >= locations.length), "location not found!");
+        return locations[locId].locationDesc;
+    }
 }
