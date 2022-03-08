@@ -10,6 +10,7 @@ contract UserContract {
         string password;
         string tellNo;
         bool set; // This boolean is used to differentiate between unset and zero struct values
+        bool isUserLoggedIn;
     }
 
     mapping(address => User) public users;
@@ -27,7 +28,8 @@ contract UserContract {
         username: _username,
         password: _password,
         tellNo: _tellNo,
-        set: true
+        set: true,
+        isUserLoggedIn: false
         });
     }
 }
