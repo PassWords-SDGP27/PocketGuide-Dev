@@ -43,4 +43,8 @@ contract UserContract {
             return false;
         }
     }
+
+    function logout() external {
+        users[msg.sender].isUserLoggedIn = false;
+    }
 }
