@@ -22,7 +22,7 @@ contract Location {
         for (uint i=0; i<locations.length; i++){
             //check if current location name is equal to find location name
             if(keccak256(abi.encodePacked((locations[i].locationName))) == keccak256(abi.encodePacked((_locationName)))){ //comparing two strings
-                return i;//then return array index of location 
+                return i;//then return array index of location
             }
         }
         return locations.length;//return size of array if location name NOT FOUND
