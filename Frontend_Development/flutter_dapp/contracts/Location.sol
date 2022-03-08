@@ -31,7 +31,9 @@ contract Location {
     //Returns description of relevant location
     function viewDesc (string memory _locationName) external view returns (string memory){
         uint locId = findLocation(_locationName);
-        require(!(locId >= locations.length), "location not found!");
-        return locations[locId].locationDesc;
+        if (!(locId >= locations.length)){
+            return locations[locId].locationDesc;
+        }
+        return "Location not found!";
     }
 }
