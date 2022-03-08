@@ -5,14 +5,15 @@ pragma solidity ^0.8.7;
 contract UserContract {
 
     struct User {
-        uint id;
-        string name;
+        string email;
+        string username;
+        string tellNo;
         bool set; // This boolean is used to differentiate between unset and zero struct values
     }
 
     mapping(address => User) public users;
 
-    function createUser(uint _userId, string memory _userName) public {
+    function createUser(string memory _email, string memory _username, string memory _tellNo) public {
         address _userAddress = msg.sender;
 
         User storage user = users[_userAddress];
@@ -21,8 +22,9 @@ contract UserContract {
 
         //Save user
         users[_userAddress] = User({
-        id: _userId,
-        name: _userName,
+        email: _email,
+        username: _username,
+        tellNo: _tellNo,
         set: true
         });
     }
