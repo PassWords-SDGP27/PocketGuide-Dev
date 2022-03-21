@@ -45,4 +45,12 @@ contract Location {
             delete locations[locId];
         }
     }
+
+    function viewLocations() external view returns(LocationStruct[] memory) {
+        return locations;
+    }
+
+    function verifyLocation(int longitude, int latitude, string memory locationName) external view{
+
+    }
 }
