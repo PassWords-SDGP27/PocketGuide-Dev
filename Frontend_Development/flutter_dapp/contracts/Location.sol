@@ -50,6 +50,7 @@ contract Location {
         return locations;
     }
 
+    //Function that validates a user input as a new loation
     function verifyLocation(int longitude, int latitude, string memory locationName) external view{
 
     }
