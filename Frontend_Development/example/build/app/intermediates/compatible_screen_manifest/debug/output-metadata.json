@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "COMPATIBLE_SCREEN_MANIFEST",
+    "kind": "Directory"
+  },
+  "applicationId": "one.ain.athul.map_address_picker.example",
+  "variantName": "debug",
+  "elements": []
+}
