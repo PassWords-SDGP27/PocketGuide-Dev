@@ -1,139 +1,198 @@
-<h1 align="center">Flutter Maps</h4>
+# Map Address Picker
 
-<h3 align="center">A Flutter app using Google Maps SDK & Directions API</h4>
+[![Pub](https://img.shields.io/pub/v/map_address_picker.svg)](https://pub.dev/packages/map_address_picker)
 
-<p align="center">
-  <img src="https://github.com/sbis04/flutter_maps/raw/master/screenshots/map_view.png" alt="Flutter Maps" />
+A simple flutter plugin for picking users location using google maps. 
+
+
+<p>
+  <img src="https://raw.githubusercontent.com/athul-ain/map_address_picker/main/screenshots/Screenshot1.png" width=265/>
 </p>
-
-## Plugins
-
-The plugins used in this project are:
-
-* [google_maps_flutter](https://pub.dev/packages/google_maps_flutter)
-* [geolocator](https://pub.dev/packages/geolocator)
-* [flutter_polyline_points](https://pub.dev/packages/flutter_polyline_points)
-
-## Features
-
-* Detect the current location of the user
-* Use Geocoding for converting addresses to coordinates and vice versa
-* Add Markers to the Map View
-* Draw the route between two places using Polylines and Directions API
-* Calculate the actual distance of the route
 
 ## Usage
 
-Before using it, you will need to make a new project in the **Google Cloud Platform**, and enable the Google Maps API for that project. Also, don't forget to setup the [Billing](https://console.cloud.google.com/project/_/billing/enable) for that project on GCP, otherwise you will receive the following error:
+To use this plugin, add `map_address_picker` as a dependency in your[ pubspec.yaml ](https://flutter.dev/docs/development/platform-integration/platform-channels) file.
 
-![](https://github.com/sbis04/flutter_maps/raw/master/screenshots/billing_error.png)
+## Getting Started
 
-* Clone the repository.
-  
-  ```bash
-  git clone https://github.com/sbis04/flutter_maps.git
-  ```
+* Get an API key at <https://cloud.google.com/maps-platform/>.
 
-* Open the project using your favorite IDE. For opening with VS Code:
-  
-  ```bash
-  code flutter_maps
-  ```
+* Enable Google Map SDK for each platform.
+  * Go to [Google Developers Console](https://console.cloud.google.com/).
+  * Choose the project that you want to enable Google Maps on.
+  * Select the navigation menu and then select "Google Maps".
+  * Select "APIs" under the Google Maps menu.
+  * To enable Google Maps for Android, select "Maps SDK for Android" in the "Additional APIs" section, then select "ENABLE".
+  * To enable Google Maps for iOS, select "Maps SDK for iOS" in the "Additional APIs" section, then select "ENABLE".
+  * Make sure the APIs you enabled are under the "Enabled APIs" section.
 
-* For the **Android** part, go to `android/app/src/main/AndroidManifest.xml` file and add your **API key** here.
-  
-  ```xml
-  <!-- Add your Google Maps API Key here -->
-  <meta-data android:name="com.google.android.geo.API_KEY"
-                 android:value="YOUR KEY HERE"/>
-  ```
+For more details, see [Getting started with Google Maps Platform](https://developers.google.com/maps/gmp-get-started).
 
-* For the **iOS** part, go to `ios/Runner/AppDelegate.swift` file and add your **API key** here.
-  
-  ```swift
-  GMSServices.provideAPIKey("YOUR KEY HERE")
-  ```
-* Go to the `lib/secrets.dart` file and add your **API key** here.
+### Android
 
-<!-- > For more info regarding generating the **API key**, you can check out my article here. -->
+1. Set the `minSdkVersion` in `android/app/build.gradle`:
 
-## Full configuration (already done in this project)
+groovy
+android {
+    defaultConfig {
+        minSdkVersion 20
+    }
+}
 
-You do not require to complete these configurations if you are cloning this project, as they are already done in it. But these may be helpful if you are setting up a new Flutter project for using Google Maps and location services.
 
-### Android setup
+This means that app will only be available for users that run Android SDK 20 or higher.
 
-* Navigate to the file `android/app/src/main/AndroidManifest.xml` and add the following code snippet inside the `application` tag:
+2. Specify your API key in the application manifest `android/app/src/main/AndroidManifest.xml`:
 
-   ```xml
-   <!-- Add your Google Maps API Key here -->
-   <meta-data android:name="com.google.android.geo.API_KEY"
-                  android:value="YOUR KEY HERE"/>
-   ```
+```xml
+<manifest ...
+  <application ...
+    <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="YOUR KEY HERE"/>
+```
 
-* Also, you will need location access in the app. So, add the following permission in the same file inside the `manifest` tag:
-  
-  ```xml
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-  ```
+### iOS
 
-### iOS setup
+Specify your API key in the application delegate `ios/Runner/AppDelegate.m`:
 
-* Navigate to the file `ios/Runner/AppDelegate.swift` and replace the whole code with the following:
+```objectivec
+#include "AppDelegate.h"
+#include "GeneratedPluginRegistrant.h"
+#import "GoogleMaps/GoogleMaps.h"
 
-   ```swift
-   import UIKit
-   import Flutter
-   import GoogleMaps
-   
-   @UIApplicationMain
-   @objc class AppDelegate: FlutterAppDelegate {
-     override func application(
-       _ application: UIApplication,
-       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-     ) -> Bool {
-       //Add your Google Maps API Key here
-       GMSServices.provideAPIKey("YOUR KEY HERE")
-       GeneratedPluginRegistrant.register(with: self)
-       return super.application(application, didFinishLaunchingWithOptions: launchOptions)
-     }
-   }
-   ```
+@implementation AppDelegate
 
-* Also, add the following to `ios/Runner/Info.plist` file:
-  
-  ```
-  <key>io.flutter.embedded_views_preview</key>
-  <string>YES</string>
-  ```
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [GMSServices provideAPIKey:@"YOUR KEY HERE"];
+  [GeneratedPluginRegistrant registerWithRegistry:self];
+  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+@end
+```
 
-* For getting location permission, add the following to the same file:
-  
-  ```
-  <key>NSLocationWhenInUseUsageDescription</key>
-  <string>This app needs access to location when open.</string>
-  ```
 
-This completes the setup for both the platforms in Flutter.
+Or in your swift code, specify your API key in the application delegate `ios/Runner/AppDelegate.swift`:
 
-## License
+```swift
+import UIKit
+import Flutter
+import GoogleMaps
 
-Copyright (c) 2020 Souvik Biswas
+@UIApplicationMain
+@objc class AppDelegate: FlutterAppDelegate {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    GMSServices.provideAPIKey("YOUR KEY HERE")
+    GeneratedPluginRegistrant.register(with: self)
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+}
+```
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### Sample Usage
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+```dart
+import 'package:map_address_picker/map_address_picker.dart';
+
+LocationResult result = await showLocationPicker(context);
+
+```
+
+
+### Example 
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:map_address_picker/map_address_picker.dart';
+import 'package:map_address_picker/models/location_result.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Map Address Picker Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      darkTheme: ThemeData.dark(),
+      home: MyHomePage(title: 'Map Address Picker Example'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key? key, required this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  LocationResult? locationResult;
+  _openLocationPicker() async {
+    var _result = await showLocationPicker(
+      context,
+      mapType: MapType.terrain,
+      requiredGPS: true,
+      automaticallyAnimateToCurrentLocation: true,
+      // initialCenter: LatLng(28.612925, 77.229512),
+      // desiredAccuracy: LocationAccuracy.best,
+      // title: "Pick your location",
+      // layersButtonEnabled: true,
+      // initialZoom: 16,
+      //floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+    );
+
+    setState(() {
+      locationResult = _result;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: _openLocationPicker,
+              child: Text("Pick Location"),
+            ),
+            Text(
+              locationResult == null
+                  ? "null"
+                  : "${locationResult!.latLng!.latitude}\n${locationResult!.latLng!.longitude}",
+              style: Theme.of(context).textTheme.headline4,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+
+## Credits
+
+The google map from [Flutter's](https://github.com/flutter) [google_maps_flutter](https://pub.dev/packages/google_maps_flutter) package
+
+current location and permission from [BaseflowIT's](https://github.com/BaseflowIT) [flutter-geolocator](https://github.com/baseflowit/flutter-geolocator) package.
+
+Inspired from [google_map_location_picker](https://github.com/humazed/google_map_location_picker) package.
