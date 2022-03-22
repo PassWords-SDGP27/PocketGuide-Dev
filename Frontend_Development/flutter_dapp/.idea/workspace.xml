@@ -33,7 +33,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="" />
+    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/2_deploy_contracts.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
