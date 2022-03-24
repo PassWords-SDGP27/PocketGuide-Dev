@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_maps"
+    package="com.example.BasicCalculator"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="20"
+        android:minSdkVersion="16"
         android:targetSdkVersion="28" />
     <!--
          Flutter needs it to communicate with the running application
@@ -20,27 +20,14 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here.
     -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
-
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="flutter_maps" >
-
-        <!-- Add your Google Maps API Key here -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDiwvl1DwPVSgsAUO98_9DWk6L_5IL5dms" />
-
+        android:label="BasicCalculator" >
         <activity
-            android:name="com.example.flutter_maps.MainActivity"
+            android:name="com.example.BasicCalculator.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
@@ -80,19 +67,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <!-- Needs to be explicitly declared on P+ -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
