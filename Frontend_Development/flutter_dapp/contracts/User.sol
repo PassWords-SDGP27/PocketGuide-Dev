@@ -51,4 +51,8 @@ contract User {
     function username() external view returns (string memory){
         return users[msg.sender].username;
     }
+
+    function email() external view returns  (string memory) {
+        return users[msg.sender].email;
+    }
 }

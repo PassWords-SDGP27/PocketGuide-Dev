@@ -2,9 +2,10 @@ const User = artifacts.require("User") ;
 
 contract("User" , () => {
     it("User Testing" , async () => {
-       const user = await User.deployed() ;
+       const user = await User.deployed();
        await user.createUser("testuser@gmail.com", "testuser", "testPassword", "0777777777");
-       const result = await user.username() ;
-       assert(result === "chithzz") ;
+       assert(await user.username() === "testuser");
+       assert(await user.email() === "testuser@gmail.com");
     });
+
 });
