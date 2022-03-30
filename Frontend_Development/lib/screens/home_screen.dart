@@ -15,17 +15,16 @@ class HomeScreen extends StatelessWidget {
   /// Page Controller
   final _pageController = PageController(viewportFraction: 0.877);
   @override
-    
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor: Color(0xff0E4B79),
       bottomNavigationBar: BottomNavigationBarTravel(),
-      body: Container( 
-        decoration:BoxDecoration(
+      body: Container(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF03406D), 
+              Color(0xFF03406D),
               Color(0xFF0C5A83),
               Color(0xFF196F92),
               Color(0xFF2685A2),
@@ -34,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             ],
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-           ),
+          ),
         ),
         child: Container(
           child: ListView(
@@ -189,7 +188,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              
 
               /// Dots Indicator
               /// Using SmoothPageIndicator Library
@@ -218,7 +216,7 @@ class HomeScreen extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.4,
                       child: FittedBox(
                         child: Text(
-                          'Popular Categories',
+                          'Gallery',
                           style: GoogleFonts.playfairDisplay(
                             fontWeight: FontWeight.w700,
                             color: Color(0xFF000000),
@@ -242,45 +240,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              /// ListView for Popular Categories Section
-              Container(
-                margin: EdgeInsets.only(top: 33.6),
-                height: 45.6,
-                child: ListView.builder(
-                  itemCount: populars.length,
-                  scrollDirection: Axis.horizontal,
-                  physics: BouncingScrollPhysics(),
-                  padding: EdgeInsets.only(left: 28.8, right: 9.6),
-                  itemBuilder: (context, index) {
-                    return Container(
-                      margin: EdgeInsets.only(right: 19.2),
-                      height: 45.6,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(9.6),
-                        color: Color(populars[index].color),
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          SizedBox(
-                            width: 19.2,
-                          ),
-                          Image.asset(
-                            populars[index].image,
-                            height: 16.8,
-                          ),
-                          SizedBox(
-                            width: 19.2,
-                          )
-                        ],
-                      ),
-                    );
-                  },
-                ),
-              ),
-
-              /// ListView for Beach Section
+              /// ListView for Gallery Section
               Container(
                 margin: EdgeInsets.only(top: 28.8, bottom: 16.8),
                 height: 124.8,

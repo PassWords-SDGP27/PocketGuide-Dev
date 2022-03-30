@@ -195,10 +195,10 @@ class _FavoriteButtonState extends State<FavoriteButton> {
             : 'assets/svg/icon_heart_fill.svg'),
       ),
       onTap: () {
-        print('Sebelum klik tombol => $isFavorite');
+        print('Liked Image --> $isFavorite');
         setState(() {
           isFavorite = !isFavorite;
-          print('Setelah klik tombol => $isFavorite');
+          print('Liked Image --> $isFavorite');
         });
       },
     );
