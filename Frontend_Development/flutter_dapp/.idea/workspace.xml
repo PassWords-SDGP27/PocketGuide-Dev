@@ -34,7 +34,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/loginPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,12 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
+      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\providers" />
+    </key>
   </component>
   <component name="RunManager" selected="Solidity.User.createUser">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
