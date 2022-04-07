@@ -1,128 +1,41 @@
-//import 'package:day13/Animation/FadeAnimation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dapp/contractLikings/contractLinking.dart';
+import 'package:flutter_dapp/pages/homePage.dart';
 
-void main() => runApp(
-    MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: HomePage()
-    )
-);
+import 'package:flutter_dapp/pages/loginPage.dart';
+import 'package:flutter_dapp/providers/auth.dart';
+import 'package:provider/provider.dart';
 
-class HomePage  extends StatelessWidget {
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    //final width = MediaQuery.of(context).size.width;
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Container(
-              height: 300,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('Assets/images/bluebackground.jpg'),
-                      fit: BoxFit.fill
-                  )
-              ),
-              child: Stack(
-                children: <Widget>[
-                  Positioned(
-                    top: 50,
-                    left: 110,
-                    width: 200,
-                    height: 200,
-                    child: Container(
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('Assets/images/logo.png')
-                            )
-                        )
-                    ),
-                  ),
-                  Positioned(
-                    child: Container(
-                      margin: EdgeInsets.only(top: 250),
-                      child: Center(
-                        child: Text("LOGIN", style: TextStyle(color: Colors.blueGrey[800], fontSize: 30, fontWeight: FontWeight.bold),),
-                      ),
-                    ),
-                  )
-
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(30.0),
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Color.fromRGBO(143, 148, 251, .2),
-                              blurRadius: 20.0,
-                              offset: Offset(0,10)
-                          )
-                        ]
-                    ),
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          padding: EdgeInsets.all(8.0),
-                          decoration: BoxDecoration(
-                              border: Border(bottom: BorderSide(color: (Colors.blue[300])!))
-                          ),
-                          child: TextField(
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: "Email or Phone Number",
-                                hintStyle: TextStyle(color: Colors.grey[400])
-                            ),
-                          ),
-                        ),
-                        Container(
-                          padding: EdgeInsets.all(8.0),
-                          child: TextField(
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintText: "Password",
-                                hintStyle: TextStyle(color: Colors.grey[400])
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  SizedBox(height:30,),
-                  Container(
-                    height: 50,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        gradient: LinearGradient(
-                            colors: [
-                              Color.fromRGBO(143, 148, 251, 1),
-                              Color.fromRGBO(143, 148, 251, .6),
-                            ]
-                        )
-                    ),
-                    child: Center(
-                      child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                    ),
-                  ),
-                  SizedBox(height: 30,),
-                  Text("Forgot Password?", style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),),
-                  SizedBox(height: 20,),
-                  Text("Sign In", style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),),
-                ],
-              ),
-            )
-          ],
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(value: Auth(),),
+        ChangeNotifierProvider.value(value: ContractLinking(),),
+      ],
+      child:Consumer<Auth>(
+    builder: (ctx,auth, _)=> MaterialApp(
+      title: "Pocket Guide",
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodyText1: TextStyle(
+            color: Color.fromRGBO(72, 72, 72, 1),
+            fontSize: 12,
+          ),
         ),
       ),
-    );
+      initialRoute: auth.isAuth ? '/': LoginPage.routeName ,
+    routes: {
+        '/' : (ctx) => HomePage(),
+    LoginPage.routeName : (ctx) => LoginPage(),
+    },
+    ),),);
   }
 }
+
