@@ -3,7 +3,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertravelapp/models/beach_model.dart';
-import 'package:fluttertravelapp/models/popular_model.dart';
 import 'package:fluttertravelapp/models/recommended_model.dart';
 import 'package:fluttertravelapp/screens/selected_place_screen.dart';
 import 'package:fluttertravelapp/widgets/bottom_navigation_bar.dart';
