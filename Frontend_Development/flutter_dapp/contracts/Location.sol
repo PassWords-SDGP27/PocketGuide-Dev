@@ -8,13 +8,14 @@ contract Location {
     struct LocationStruct {
         string locationName;
         string locationDesc;
+        string longLat;
     }
 
     LocationStruct[] public locations;//array to store locations
 
     //Add new location function
-    function addLocation(string memory _locationName, string memory _locationDesc) external {
-        locations.push(LocationStruct(_locationName, _locationDesc)); //add new location to the locations array
+    function addLocation(string memory _locationName, string memory _locationDesc, string memory _longLat) external {
+        locations.push(LocationStruct(_locationName, _locationDesc, _longLat)); //add new location to the locations array
     }
 
     //Function returns array index of location if location exists, else returns size of array
@@ -34,8 +35,22 @@ contract Location {
         if (!(locId >= locations.length)){
             return locations[locId].locationDesc;
         }
+        return "Locaton not found!";
+    }
+
+    //returns location name
+    function viewLocationName  () external view returns (string memory){
+        return locations[0].locationName;
+    }
+
+    function viewLongLat (string memory _locationName) external view returns (string memory){
+        uint locId = findLocation(_locationName);
+        if (!(locId >= locations.length)){
+            return locations[locId].longLat;
+        }
         return "Location not found!";
     }
+
 
     //Delete a location from locations array
     function deleteLocation (string memory _locName) external {
@@ -46,12 +61,16 @@ contract Location {
         }
     }
 
-    function viewLocations() external view returns(LocationStruct[] memory) {
+    function viewAllLocations() external view returns(LocationStruct[] memory) {
         return locations;
     }
 
     //Function that validates a user input as a new loation
     function verifyLocation(int longitude, int latitude, string memory locationName) external view{
 
+    }
+
+    function getLocation() external view returns (string memory){
+        return locations[0].locationName;
     }
 }
