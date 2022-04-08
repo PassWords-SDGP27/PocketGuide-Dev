@@ -69,4 +69,8 @@ contract Location {
     function verifyLocation(int longitude, int latitude, string memory locationName) external view{
 
     }
+
+    function getLocation() external view returns (string memory){
+        return locations[0].locationName;
+    }
 }
