@@ -91,7 +91,7 @@ class ContractLinking extends ChangeNotifier{
         _credentials,
         Transaction.callContract(
             contract: _contract, function: _createUser, parameters: [email, username, password, tellNo]));
-    getName();
+
   }
 
   // getLocation() async {
