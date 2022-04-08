@@ -476,7 +476,7 @@ class _LoginPageState extends State<LoginPage> {
                                       onPressed: () {
                                         // Navigator.pushNamed(
                                         //     context, SignUpScreen.routeName);
-                                        contractLink.addLocation("Colombo", "Thisis Colombo", "478596");
+                                       // contractLink.addLocation("Colombo", "Thisis Colombo", "478596");
                                       },
                                       child: Text(
                                         "Sign Up",

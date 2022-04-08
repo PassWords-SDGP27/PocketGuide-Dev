@@ -15,7 +15,7 @@ class Auth with ChangeNotifier {
   String? _education;
   String? _university;
   String? _registeredDate;
-  late bool _status = false;
+  late bool _status = true;
 
   bool get isAuth {
     return _status;

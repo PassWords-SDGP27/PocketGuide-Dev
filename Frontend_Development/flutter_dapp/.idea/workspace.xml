@@ -33,8 +33,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
+    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers">
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/Toon.sfb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArCoreController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArCoreController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +72,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Flutter-ArCore-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/app/src/main/assets" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sasindi\Desktop\2 nd year\2nd sem\SDGP\frProject\flutter_dapp\final_clone\PocketGuide-Dev\Frontend_Development\flutter_dapp\android\app\src\main\assets" />
+      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\mdels" />
+      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
       <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\providers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\mdels" />
-      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -92,8 +103,9 @@
       </option>
       <option name="passParentEnvs" value="true" />
       <option name="programParameters" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <option name="workingDirectory" value="" />
       <option name="contractName" value="User" />
