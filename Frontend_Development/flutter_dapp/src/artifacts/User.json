@@ -1,5 +1,5 @@
 {
-  "contractName": "UserContract",
+  "contractName": "User",
   "abi": [
     {
       "inputs": [
@@ -7967,7 +7967,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-05T17:28:37.843Z",
+  "updatedAt": "2022-04-02T17:47:12.564Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
