@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dapp/widgets/ArCoreController.dart';
 class ARTourGuidePage extends StatefulWidget {
   const ARTourGuidePage({Key? key}) : super(key: key);
 
@@ -9,10 +10,6 @@ class ARTourGuidePage extends StatefulWidget {
 class _ARTourGuidePageState extends State<ARTourGuidePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("AR GUIDE"),
-      ),
-    );
+    return ARCoreController();
   }
 }

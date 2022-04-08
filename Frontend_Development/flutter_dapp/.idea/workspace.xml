@@ -33,15 +33,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
+    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers">
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/Toon.sfb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/Location.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Location.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/2_deploy_contracts.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/2_deploy_contracts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/Location.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/Location.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/Migrations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/User.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/User.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/UserContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/UserContract.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ArCoreController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArCoreController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +72,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Flutter-ArCore-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/app/src/main/assets" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sasindi\Desktop\2 nd year\2nd sem\SDGP\frProject\flutter_dapp\final_clone\PocketGuide-Dev\Frontend_Development\flutter_dapp\android\app\src\main\assets" />
+      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\mdels" />
+      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
       <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\providers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib\mdels" />
-      <recent name="D:\IIT\2021-2022 Level 5\1st Semester\SDGP\Development\Frontend_Development\flutter_dapp\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -99,8 +103,9 @@
       </option>
       <option name="passParentEnvs" value="true" />
       <option name="programParameters" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <option name="workingDirectory" value="" />
       <option name="contractName" value="User" />
@@ -147,64 +152,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="-1634" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1648720363603">
-      <screen x="-2400" y="10" width="1920" height="1032" />
-    </state>
-    <state x="-1634" y="242" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648720363603" />
-    <state x="-1709" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1648723275357">
-      <screen x="-2400" y="10" width="1920" height="1032" />
-    </state>
-    <state x="-1709" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648723275357" />
-    <state x="-2307" y="103" width="1734" height="846" key="AVDManager" timestamp="1648728470220">
-      <screen x="-2400" y="10" width="1920" height="1032" />
-    </state>
-    <state x="-2307" y="103" width="1734" height="846" key="AVDManager/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648728470220" />
-    <state x="580" y="155" key="AndroidProcessChooserDialog" timestamp="1649398079158">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="580" y="155" key="AndroidProcessChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1649398079158" />
-    <state x="593" y="214" key="FileChooserDialogImpl" timestamp="1649303454178">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="-1472" y="201" key="FileChooserDialogImpl/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649175802990" />
-    <state x="593" y="214" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1649303454178" />
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom" timestamp="1649401654515">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.bottom/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
-    <state width="1877" height="707" key="GridCell.Tab.0.bottom/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1649401654515" />
-    <state width="1493" height="306" key="GridCell.Tab.0.center" timestamp="1649401654514">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.center/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
-    <state width="1877" height="707" key="GridCell.Tab.0.center/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1649401654514" />
-    <state width="1493" height="306" key="GridCell.Tab.0.left" timestamp="1649401654514">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.left/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
-    <state width="1877" height="707" key="GridCell.Tab.0.left/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1649401654514" />
-    <state width="1493" height="306" key="GridCell.Tab.0.right" timestamp="1649401654514">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.right/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
-    <state width="1877" height="707" key="GridCell.Tab.0.right/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1649401654514" />
-    <state x="375" y="107" key="SettingsEditor" timestamp="1649303732337">
-      <screen x="0" y="0" width="1536" height="816" />
-    </state>
-    <state x="-1931" y="171" key="SettingsEditor/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648724044285" />
-    <state x="375" y="107" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1649303732337" />
-    <state x="-1866" y="210" key="new project wizard" timestamp="1648916217342">
-      <screen x="-2400" y="10" width="1920" height="1032" />
-    </state>
-    <state x="-1866" y="210" key="new project wizard/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648916217342" />
-    <state x="-1777" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1648723020028">
-      <screen x="-2400" y="10" width="1920" height="1032" />
-    </state>
-    <state x="-1777" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648723020028" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added ar controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ar controllers" />
   </component>
 </project>

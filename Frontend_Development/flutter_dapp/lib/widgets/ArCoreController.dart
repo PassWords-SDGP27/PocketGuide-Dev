@@ -3,7 +3,7 @@ import 'package:arcore_flutter_plugin/arcore_flutter_plugin.dart';
 import 'package:vector_math/vector_math_64.dart' as vector;
 
 class ARCoreController extends StatefulWidget {
-  static const routeName = '/arCoreScreen';
+
   const ARCoreController({Key? key}) : super(key: key);
 
   @override
@@ -61,8 +61,8 @@ class _ARCoreControllerState extends State<ARCoreController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,
+    return Container(
+      child: ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,
         enableUpdateListener: true,),
     );
   }//# 20190295 I.S.U.Perera

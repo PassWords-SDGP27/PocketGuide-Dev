@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dapp/ArCoreController.dart';
+import 'package:flutter_dapp/widgets/ArCoreController.dart';
 import 'package:flutter_dapp/contractLikings/contractLinking.dart';
 import 'package:flutter_dapp/pages/homePage.dart';
 
@@ -31,12 +31,12 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-     // initialRoute: auth.isAuth ? '/': LoginPage.routeName ,
-      initialRoute: ARCoreController.routeName,
+      initialRoute: auth.isAuth ? '/': LoginPage.routeName ,
+
     routes: {
         '/' : (ctx) => HomePage(),
     LoginPage.routeName : (ctx) => LoginPage(),
-      ARCoreController.routeName : (ctx) => ARCoreController(),
+
     },
     ),),);
   }
