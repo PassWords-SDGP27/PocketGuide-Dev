@@ -14,12 +14,15 @@ class ContractLinking extends ChangeNotifier{
   late Web3Client _client;
   bool isLoading = true;
 
-  late String _abiCode;
-  late EthereumAddress _contractAddress;
+  late String _abiCode1;
+  late String _abiCode2;
+  late EthereumAddress _contractAddress1;
+  late EthereumAddress _contractAddress2;
 
   late Credentials _credentials;
 
-  late DeployedContract _contract;
+  late DeployedContract _contract1;
+  late DeployedContract _contract2;
   late ContractFunction _addLocation;
   late ContractFunction _getLocation;
 
@@ -46,13 +49,19 @@ class ContractLinking extends ChangeNotifier{
   Future<void> getAbi() async {
 
     // Reading the contract abi
-    String abiStringFile =
+    String abiStringFile1 =
     await rootBundle.loadString("src/artifacts/Location.json");
-    var jsonAbi = jsonDecode(abiStringFile);
-    _abiCode = jsonEncode(jsonAbi["abi"]);
+    String abiStringFile2 =
+    await rootBundle.loadString("src/artifacts/User.json");
+    var jsonAbi1 = jsonDecode(abiStringFile1);
+    var jsonAbi2 = jsonDecode(abiStringFile2);
+    _abiCode1 = jsonEncode(jsonAbi1["abi"]);
+    _abiCode2 = jsonEncode(jsonAbi2["abi"]);
 
-    _contractAddress =
-        EthereumAddress.fromHex(jsonAbi["networks"]["5777"]["address"]);
+    _contractAddress1 =
+        EthereumAddress.fromHex(jsonAbi1["networks"]["5777"]["address"]);
+    _contractAddress2 =
+        EthereumAddress.fromHex(jsonAbi1["networks"]["5777"]["address"]);
   }
 
   Future<void>   getCredentials() async {
@@ -63,58 +72,63 @@ class ContractLinking extends ChangeNotifier{
   Future<void> getDeployedContract() async {
 
     // Telling Web3dart where our contract is declared.
-    _contract = DeployedContract(
-        ContractAbi.fromJson(_abiCode, "Location"), _contractAddress);
+    _contract1 = DeployedContract(
+        ContractAbi.fromJson(_abiCode1, "Location"), _contractAddress1);
+    // Telling Web3dart where our contract is declared.
+    _contract2 = DeployedContract(
+        ContractAbi.fromJson(_abiCode2, "User"), _contractAddress2);
 
     // Extracting the functions, declared in contract.
-    _addLocation = _contract.function("addLocation");
-    _getLocation = _contract.function("getLocation");
+    _addLocation = _contract1.function("addLocation");
+    _getLocation = _contract1.function("getLocation");
+    // _addLocation = _contract2.function("createUser");
+    // _getLocation = _contract2.function("getUser");
     //addLocation();
-  }
-
-  getLocation() async {
-
-    // Getting the current name declared in the smart contract.
-    var currentName = await _client
-        .call(contract: _contract, function: _yourName, params: []);
-    deployedName = currentName[0];
-    isLoading = false;
-    notifyListeners();
-  }
-
-  createUser(String email, String username, String password, String tellNo) async {
-
-    // Setting the name to nameToSet(name defined by user)
-    isLoading = true;
-    notifyListeners();
-    await _client.sendTransaction(
-        _credentials,
-        Transaction.callContract(
-            contract: _contract, function: _createUser, parameters: [email, username, password, tellNo]));
-    getName();
   }
 
   // getLocation() async {
   //
   //   // Getting the current name declared in the smart contract.
   //   var currentName = await _client
-  //       .call(contract: _contract, function: _getLocation, params: []);
+  //       .call(contract: _contract, function: _yourName, params: []);
   //   deployedName = currentName[0];
   //   isLoading = false;
   //   notifyListeners();
   // }
   //
-  // addLocation(String locationName, String description, String longLat) async {
+  // createUser(String email, String username, String password, String tellNo) async {
   //
   //   // Setting the name to nameToSet(name defined by user)
   //   isLoading = true;
   //   notifyListeners();
-  //
   //   await _client.sendTransaction(
   //       _credentials,
   //       Transaction.callContract(
-  //           contract: _contract, function: _addLocation, parameters: [locationName, description, longLat]));
-  //   getLocation();
+  //           contract: _contract, function: _createUser, parameters: [email, username, password, tellNo]));
+  //   getName();
   // }
+
+  getLocation() async {
+
+    // Getting the current name declared in the smart contract.
+    var currentName = await _client
+        .call(contract: _contract1, function: _getLocation, params: []);
+    deployedName = currentName[0];
+    isLoading = false;
+    notifyListeners();
+  }
+
+  addLocation(String locationName, String description, String longLat) async {
+
+    // Setting the name to nameToSet(name defined by user)
+    isLoading = true;
+    notifyListeners();
+
+    await _client.sendTransaction(
+        _credentials,
+        Transaction.callContract(
+            contract: _contract1, function: _addLocation, parameters: [locationName, description, longLat]));
+    getLocation();
+  }
 
 }
