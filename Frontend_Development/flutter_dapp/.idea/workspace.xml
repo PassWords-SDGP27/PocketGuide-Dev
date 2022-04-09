@@ -33,14 +33,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/Location.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/Location.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/Migrations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/User.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/User.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artifacts/UserContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/UserContract.json" afterDir="false" />
-    </list>
+    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
