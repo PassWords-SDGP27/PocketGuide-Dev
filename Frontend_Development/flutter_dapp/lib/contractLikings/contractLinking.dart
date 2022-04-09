@@ -9,7 +9,7 @@ import 'package:web_socket_channel/io.dart';
 class ContractLinking extends ChangeNotifier{
   final String _rpcUrl = "HTTP://10.0.2.2:7545";
   final String _wsUrl = "ws://10.0.2.2:7545/";
-  final String _privateKey = "6718ec30cbf0a4df3a7d9a679c4db993652f09b666c9f408cb9259bcce6ade9a";
+  final String _privateKey = "a0f30820624a6eace9370f28f4fb6903483e7bc8479591d76f4f6c467da89e4c";
 
   late Web3Client _client;
   bool isLoading = true;
