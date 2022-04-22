@@ -14,7 +14,7 @@ class CupertinoFeedbackDialog extends StatelessWidget {
   final Icon currentFace;
 
   final int rating;
-
+// sdgp 
   final TextEditingController feedbackEditingController;
 
   CupertinoFeedbackDialog({
