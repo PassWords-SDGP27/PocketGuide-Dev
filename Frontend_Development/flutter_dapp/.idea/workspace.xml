@@ -34,7 +34,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/contracts/User.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/User.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +73,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Solidity.User.createUser">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
     <configuration name="User.createUser" type="SolidityConfigurationType" factoryName="Solidity" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="flutter_dapp" />
-      <option name="VMParameters" />
+      <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
       <option name="alternativeJrePath" />
       <option name="alternativeJrePathEnabled" value="false" />
@@ -78,7 +88,7 @@
         <map />
       </option>
       <option name="passParentEnvs" value="true" />
-      <option name="programParameters" />
+      <option name="programParameters" value="" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -86,9 +96,9 @@
       <option name="contractName" value="User" />
       <option name="contractFile" value="$PROJECT_DIR$/contracts/User.sol" />
       <option name="functionName" value="createUser" />
-      <option name="vmParameters" />
-      <option name="programParameters" />
-      <option name="workingDirectory" />
+      <option name="vmParameters" value="" />
+      <option name="programParameters" value="" />
+      <option name="workingDirectory" value="" />
       <option name="envs">
         <map />
       </option>
@@ -128,9 +138,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1659" y="281" key="FileChooserDialogImpl" timestamp="1645552862676">
+    <state x="-1660" y="269" key="#HTTP_Proxy" timestamp="1650621806292">
       <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state x="-1659" y="281" key="FileChooserDialogImpl/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1645552862676" />
+    <state x="-1660" y="269" key="#HTTP_Proxy/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650621806292" />
+    <state x="-1689" y="267" key="#Solidity" timestamp="1650621978517">
+      <screen x="-2400" y="10" width="1920" height="1032" />
+    </state>
+    <state x="-1689" y="267" key="#Solidity/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650621978517" />
+    <state x="-1659" y="281" key="FileChooserDialogImpl" timestamp="1650621795819">
+      <screen x="-2400" y="10" width="1920" height="1032" />
+    </state>
+    <state x="-1659" y="281" key="FileChooserDialogImpl/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650621795819" />
+    <state width="1877" height="362" key="GridCell.Tab.0.bottom" timestamp="1650624029811">
+      <screen x="-2400" y="10" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.bottom/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650624029811" />
+    <state width="1877" height="362" key="GridCell.Tab.0.center" timestamp="1650624029811">
+      <screen x="-2400" y="10" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.center/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650624029811" />
+    <state width="1877" height="362" key="GridCell.Tab.0.left" timestamp="1650624029811">
+      <screen x="-2400" y="10" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.left/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650624029811" />
+    <state width="1877" height="362" key="GridCell.Tab.0.right" timestamp="1650624029811">
+      <screen x="-2400" y="10" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.right/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650624029811" />
   </component>
 </project>
