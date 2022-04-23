@@ -33,19 +33,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers">
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/Toon.sfb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ArCoreController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArCoreController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/providers/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth.dart" afterDir="false" />
-    </list>
+    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,9 +58,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/app/src/main/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -132,7 +122,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="" />
+      <changelist id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
       <created>1645503623159</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
