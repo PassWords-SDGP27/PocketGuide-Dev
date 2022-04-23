@@ -4,7 +4,7 @@ import 'dart:async';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dapp/contractLikings/contractLinking.dart';
-import 'package:flutter_dapp/mdels/httpException.dart';
+import 'package:flutter_dapp/models/httpException.dart';
 import 'package:flutter_dapp/pages/homePage.dart';
 
 import 'package:flutter_dapp/pages/signUpPage.dart';

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dapp/mdels/httpException.dart';
+import 'package:flutter_dapp/models/httpException.dart';
 import 'package:flutter_dapp/pages/loginPage.dart';
 import 'package:flutter_dapp/widgets/backgroundWidgetWithoutBottomNav.dart';
 import 'package:flutter_dapp/widgets/errorAlertDialogWidget.dart';

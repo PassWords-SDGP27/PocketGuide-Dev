@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dapp/mdels/location_result.dart';
+import 'package:flutter_dapp/models/location_result.dart';
 import 'package:map_address_picker/map_address_picker.dart';
 
 class LocationSelectorPage extends StatefulWidget {
