@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
-  final List _children = [LandingPage(), LocationSelectorPage(), FeedbackPage() ];
+  final List _children = [LandingPage(),ARTourGuidePage(), LocationSelectorPage(), FeedbackPage() ];
   void _onItemTapped(int index) {
     setState(() {
       _currentIndex  = index;
@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
      body: _children[_currentIndex],
      
      bottomNavigationBar: BottomNavigationBar(
+       type: BottomNavigationBarType.fixed,
        backgroundColor:  Color(0xFF69B3BB),
       currentIndex: _currentIndex,
        onTap: _onItemTapped,// this will be set when a new tab is tapped
@@ -38,11 +39,11 @@ class _HomePageState extends State<HomePage> {
         ),
          BottomNavigationBarItem(
           icon: new Icon(Icons.view_in_ar),
-          label: 'AR',
+          label: 'Virtual Guide',
         ),
         BottomNavigationBarItem(
           icon: new Icon(Icons.add_location),
-          label: 'Locations',
+          label: 'Add Location',
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.reviews),

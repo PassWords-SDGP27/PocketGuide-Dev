@@ -2,21 +2,18 @@ class RecommendedModel {
   String name;
   String tagLine;
   String image;
+  String images;
   String description;
 
-  RecommendedModel(
-      this.name, this.tagLine, this.image, this.description);
+  RecommendedModel(this.name, this.tagLine, this.image,this.images, this.description);
 }
-
-List<String> images = [
-  "https://images.unsplash.com/photo-1588598198321-9735fd52455b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-];
 
 List<RecommendedModel> recommendations = recommendationsData
     .map((item) => RecommendedModel(
         item['name'].toString(),
         item['tagLine'].toString(),
         item['image'].toString(),
+        item['images'].toString(),
         item['description'].toString()))
     .toList();
 
