@@ -31,6 +31,20 @@ class _LocationSelectorPageState extends State<LocationSelectorPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color(0xFF03406D),
+              Color(0xFF0C5A83),
+              Color(0xFF196F92),
+              Color(0xFF2685A2),
+              Color(0xFF3A9BB2),
+              Color(0xFF69B3BB),
+            ],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+          ),
+        ),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +55,7 @@ class _LocationSelectorPageState extends State<LocationSelectorPage> {
             ),
             Text(
               locationResult == null
-                  ? "null"
+                  ? ""
                   : "${locationResult!.latLng!.latitude}\n${locationResult!.latLng!.longitude}",
               style: Theme.of(context).textTheme.headline4,
             ),
