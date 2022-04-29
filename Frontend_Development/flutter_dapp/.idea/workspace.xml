@@ -33,19 +33,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers">
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/assets/Toon.sfb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+<<<<<<< HEAD
+    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
+=======
+    <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ArCoreController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ArCoreController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/homeSubPages/ARTourGuide.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/providers/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/artifacts/Location.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/Location.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/artifacts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/Migrations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/artifacts/User.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/User.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/artifacts/UserContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/UserContract.json" afterDir="false" />
     </list>
+>>>>>>> 2c388a931121504c54cb828d8c2b295d7e4255e3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,9 +69,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/app/src/main/assets" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../Flutter" />
+>>>>>>> 47f8eae36eb424015cad68f50d392f11f17800ff
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+>>>>>>> 2c388a931121504c54cb828d8c2b295d7e4255e3
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -103,9 +115,8 @@
       </option>
       <option name="passParentEnvs" value="true" />
       <option name="programParameters" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <option name="workingDirectory" value="" />
       <option name="contractName" value="User" />
@@ -132,7 +143,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="" />
+      <changelist id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
       <created>1645503623159</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -161,47 +172,47 @@
       <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
     <state x="-1709" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648723275357" />
-    <state x="-2307" y="103" width="1734" height="846" key="AVDManager" timestamp="1648728470220">
+    <state x="-2307" y="103" width="1734" height="846" key="AVDManager" timestamp="1650625517456">
       <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state x="-2307" y="103" width="1734" height="846" key="AVDManager/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648728470220" />
+    <state x="-2307" y="103" width="1734" height="846" key="AVDManager/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650625517456" />
     <state x="580" y="155" key="AndroidProcessChooserDialog" timestamp="1649398079158">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="580" y="155" key="AndroidProcessChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1649398079158" />
-    <state x="593" y="214" key="FileChooserDialogImpl" timestamp="1649303454178">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state x="-1472" y="201" key="FileChooserDialogImpl" timestamp="1650624482017">
+      <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state x="-1472" y="201" key="FileChooserDialogImpl/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649175802990" />
+    <state x="-1472" y="201" key="FileChooserDialogImpl/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650624482017" />
     <state x="593" y="214" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1649303454178" />
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom" timestamp="1649401762130">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1650646458113">
+      <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.bottom/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
+    <state width="1493" height="303" key="GridCell.Tab.0.bottom/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650646458113" />
     <state width="1877" height="707" key="GridCell.Tab.0.bottom/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1649401762130" />
-    <state width="1493" height="306" key="GridCell.Tab.0.center" timestamp="1649401762129">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state width="1493" height="467" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1649403848386" />
+    <state width="1493" height="303" key="GridCell.Tab.0.center" timestamp="1650646458113">
+      <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.center/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
+    <state width="1493" height="303" key="GridCell.Tab.0.center/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650646458113" />
     <state width="1877" height="707" key="GridCell.Tab.0.center/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1649401762129" />
-    <state width="1493" height="306" key="GridCell.Tab.0.left" timestamp="1649401762129">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state width="1493" height="467" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1649403848386" />
+    <state width="1493" height="303" key="GridCell.Tab.0.left" timestamp="1650646458113">
+      <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.left/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
+    <state width="1493" height="303" key="GridCell.Tab.0.left/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650646458113" />
     <state width="1877" height="707" key="GridCell.Tab.0.left/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1649401762129" />
-    <state width="1493" height="306" key="GridCell.Tab.0.right" timestamp="1649401762130">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state width="1493" height="467" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1649403848385" />
+    <state width="1493" height="303" key="GridCell.Tab.0.right" timestamp="1650646458113">
+      <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.right/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1649181617032" />
+    <state width="1493" height="303" key="GridCell.Tab.0.right/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650646458113" />
     <state width="1877" height="707" key="GridCell.Tab.0.right/0.0.1536.816/-2400.10.1920.1032@0.0.1536.816" timestamp="1648897282699" />
-    <state width="1493" height="306" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1649401762130" />
-    <state x="375" y="107" key="SettingsEditor" timestamp="1649303732337">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state width="1493" height="467" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1649403848386" />
+    <state x="-1931" y="171" key="SettingsEditor" timestamp="1650624584330">
+      <screen x="-2400" y="10" width="1920" height="1032" />
     </state>
-    <state x="-1931" y="171" key="SettingsEditor/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1648724044285" />
+    <state x="-1931" y="171" key="SettingsEditor/0.0.1536.816/-2400.10.1920.1032@-2400.10.1920.1032" timestamp="1650624584330" />
     <state x="375" y="107" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1649303732337" />
     <state x="-1866" y="210" key="new project wizard" timestamp="1648916217342">
       <screen x="-2400" y="10" width="1920" height="1032" />

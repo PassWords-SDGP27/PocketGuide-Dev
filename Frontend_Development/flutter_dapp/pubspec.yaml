@@ -28,15 +28,17 @@ dependencies:
   http: ^0.13.4
   web_socket_channel: ^2.1.0
   flutter_svg: ^0.22.0
-  google_fonts: ^2.3.1
+  google_fonts: ^2.1.0
   smooth_page_indicator: ^0.2.3
   cached_network_image: ^3.0.0
   device_preview: ^1.0.0
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.3
   email_validator: ^2.0.1
   map_address_picker: ^0.3.0
   arcore_flutter_plugin: ^0.1.0-null-safety.3
   flutter_tts: ^3.3.3
+
+
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +59,8 @@ flutter:
   assets:
     - src/artifacts/User.json
     - src/artifacts/Location.json
+    - assets/images/
+    - assets/svg/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
