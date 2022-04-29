@@ -33,6 +33,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
+=======
     <list default="true" id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contractLikings/contractLinking.dart" afterDir="false" />
@@ -41,6 +44,7 @@
       <change beforePath="$PROJECT_DIR$/src/artifacts/User.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/User.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/artifacts/UserContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/artifacts/UserContract.json" afterDir="false" />
     </list>
+>>>>>>> 2c388a931121504c54cb828d8c2b295d7e4255e3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,12 +69,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../Flutter" />
+>>>>>>> 47f8eae36eb424015cad68f50d392f11f17800ff
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+>>>>>>> 2c388a931121504c54cb828d8c2b295d7e4255e3
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -129,7 +143,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="46307849-2346-401e-bd91-024441ce9936" name="Default Changelist" comment="" />
+      <changelist id="35475354-a137-43f8-92f6-dd04f99f02e7" name="Default Changelist" comment="added ar controllers" />
       <created>1645503623159</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

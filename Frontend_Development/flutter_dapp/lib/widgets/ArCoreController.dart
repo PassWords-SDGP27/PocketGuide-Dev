@@ -4,10 +4,10 @@ import 'package:vector_math/vector_math_64.dart' as vector;
 
 class ARCoreController extends StatefulWidget {
 
-  const ARCoreController({Key? key}) : super(key: key);
+  ARCoreController({Key? key}) : super(key: key);
 
   @override
-  State<ARCoreController> createState() => _ARCoreControllerState();
+  _ARCoreControllerState createState() => _ARCoreControllerState();
 }
 
 class _ARCoreControllerState extends State<ARCoreController> {
@@ -17,7 +17,6 @@ class _ARCoreControllerState extends State<ARCoreController> {
   void dipsose(){
     super.dispose();
     arCoreController.dispose();
-    //# 20190295 I.S.U.Perera
   }
 
   _onArCoreViewCreated(ArCoreController controller){
@@ -43,7 +42,6 @@ class _ARCoreControllerState extends State<ARCoreController> {
       rotation: vector.Vector4(0,180,0,0),
     );
     controller.addArCoreNode(node);
-    //# 20190295 I.S.U.Perera
   }
 
   _addSphere(ArCoreController controller, ArCorePlane plane){
@@ -56,7 +54,6 @@ class _ARCoreControllerState extends State<ARCoreController> {
         rotation: plane.centerPose?.rotation
     );
     controller.addArCoreNode(node);
-    //# 20190295 I.S.U.Perera
   }
 
   @override
