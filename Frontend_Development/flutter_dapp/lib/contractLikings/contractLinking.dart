@@ -25,6 +25,8 @@ class ContractLinking extends ChangeNotifier{
   late DeployedContract _contract2;
   late ContractFunction _addLocation;
   late ContractFunction _getLocation;
+  late ContractFunction _createUser;
+  late ContractFunction _getUser;
 
   late String deployedName;
 
@@ -81,32 +83,34 @@ class ContractLinking extends ChangeNotifier{
     // Extracting the functions, declared in contract.
     _addLocation = _contract1.function("addLocation");
     _getLocation = _contract1.function("getLocation");
+    _createUser = _contract2.function("createUser");
+    _getUser = _contract2.function("getUser");
     // _addLocation = _contract2.function("createUser");
     // _getLocation = _contract2.function("getUser");
     //addLocation();
   }
 
-  // getLocation() async {
-  //
-  //   // Getting the current name declared in the smart contract.
-  //   var currentName = await _client
-  //       .call(contract: _contract, function: _yourName, params: []);
-  //   deployedName = currentName[0];
-  //   isLoading = false;
-  //   notifyListeners();
-  // }
-  //
-  // createUser(String email, String username, String password, String tellNo) async {
-  //
-  //   // Setting the name to nameToSet(name defined by user)
-  //   isLoading = true;
-  //   notifyListeners();
-  //   await _client.sendTransaction(
-  //       _credentials,
-  //       Transaction.callContract(
-  //           contract: _contract, function: _createUser, parameters: [email, username, password, tellNo]));
-  //   getName();
-  // }
+  getUser() async {
+
+    // Getting the current name declared in the smart contract.
+    var currentName = await _client
+        .call(contract: _contract2, function: _getUser, params: []);
+    deployedName = currentName[0];
+    isLoading = false;
+    notifyListeners();
+  }
+
+  createUser(String email, String username, String password, String tellNo) async {
+
+    // Setting the name to nameToSet(name defined by user)
+    isLoading = true;
+    notifyListeners();
+    await _client.sendTransaction(
+        _credentials,
+        Transaction.callContract(
+            contract: _contract2, function: _createUser, parameters: [email, username, password, tellNo]));
+    getUser();
+  }
 
   getLocation() async {
 
