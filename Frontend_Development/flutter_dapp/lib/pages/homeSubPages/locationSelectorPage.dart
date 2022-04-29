@@ -78,7 +78,7 @@ class _LocationSelectorPageState extends State<LocationSelectorPage> {
                     ))),
             ElevatedButton(
               onPressed: _openLocationPicker,
-              child: Text("Add Location"),
+              child: Text("Get Co-Ordinates"),
             ),
               Center(
                   child: Text(

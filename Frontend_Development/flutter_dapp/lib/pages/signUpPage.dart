@@ -80,7 +80,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return BackgroundWidgetWithoutBottomNav(
-      img: "assets/images/normal_bubble.png",
       backgroundColor: Color.fromRGBO(148, 202, 204, 1),
       body: SingleChildScrollView(
         child: Container(

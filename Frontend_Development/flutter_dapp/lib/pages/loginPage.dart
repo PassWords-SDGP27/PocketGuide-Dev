@@ -12,6 +12,7 @@ import 'package:flutter_dapp/providers/auth.dart';
 import 'package:flutter_dapp/widgets/errorAlertDialogWidget.dart';
 import 'package:flutter_dapp/widgets/pageTopTitile.dart';
 import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   static const routeName = '/loginScreen';
@@ -215,7 +216,18 @@ class _LoginPageState extends State<LoginPage> {
 
     return Container(
       decoration: BoxDecoration(
-        color: Color.fromRGBO(148, 202, 204, 1),
+        gradient: LinearGradient(
+            colors: [
+              Color(0xFF03406D),
+              Color(0xFF0C5A83),
+              Color(0xFF196F92),
+              Color(0xFF2685A2),
+              Color(0xFF3A9BB2),
+              Color(0xFF69B3BB),
+            ],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+          ),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -237,12 +249,12 @@ class _LoginPageState extends State<LoginPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.only(top: 55),
-                    child: PageTopTitle(
-                      title: "Hello",
-                      description: "Let's progress together with Intelekt.",
-                      titleColor: Color.fromRGBO(54, 69, 90, 1),
-                      descriptionColor: Color.fromRGBO(73, 85, 102, 1),
+                    margin: EdgeInsets.only(top: 45),
+                    child: Text(
+                      'Hello!\nPocket Guide:\nYour Adventure Awaits!',
+                      style: GoogleFonts.playfairDisplay(
+                        fontSize:40, fontWeight: FontWeight.w700
+                      ),
                     ),
                   ),
                   SingleChildScrollView(
@@ -295,20 +307,21 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(fontWeight: FontWeight.w500),
                                 decoration: InputDecoration(
                                   labelText: "E mail",
-                                  labelStyle: TextStyle(
-                                    color: Color.fromRGBO(72, 72, 72, 1),
+                                  labelStyle: GoogleFonts.lato(
+                                    color: Color.fromARGB(255, 0, 0, 0),
                                     fontSize: 14,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                   suffixIcon: _correctEmail
                                       ? Icon(
                                     Icons.done,
                                     color:
-                                    Color.fromRGBO(72, 72, 72, 1),
+                                    Color.fromARGB(255, 0, 0, 0),
                                   )
                                       : Icon(
                                     Icons.close_outlined,
                                     color:
-                                    Color.fromRGBO(72, 72, 72, 1),
+                                    Color.fromARGB(255, 0, 0, 0),
                                   ),
                                   border: UnderlineInputBorder(
                                     borderSide: BorderSide(
@@ -337,9 +350,10 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(fontWeight: FontWeight.w500),
                                 decoration: InputDecoration(
                                   labelText: "Password",
-                                  labelStyle: TextStyle(
-                                    color: Color.fromRGBO(72, 72, 72, 1),
+                                  labelStyle: GoogleFonts.lato(
+                                    color: Color.fromARGB(255, 0, 0, 0),
                                     fontSize: 14,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                   //show password functionality
                                   suffix: IconButton(
@@ -347,12 +361,12 @@ class _LoginPageState extends State<LoginPage> {
                                         ? Icon(
                                       Icons.visibility_off,
                                       color:
-                                      Color.fromRGBO(72, 72, 72, 1),
+                                      Color.fromARGB(255, 0, 0, 0),
                                     )
                                         : Icon(
                                       Icons.visibility,
                                       color:
-                                      Color.fromRGBO(72, 72, 72, 1),
+                                      Color.fromARGB(255, 0, 0, 0),
                                     ),
                                     onPressed: () {
                                       setState(() {
@@ -386,8 +400,7 @@ class _LoginPageState extends State<LoginPage> {
                                       child: Text(
                                         "Forgot Password?",
                                         style: TextStyle(
-                                            color: Color.fromRGBO(
-                                                72, 72, 72, 1)),
+                                            color: Color.fromARGB(255, 0, 0, 0)),
                                       ),
                                     ),
                                   ),
@@ -420,8 +433,9 @@ class _LoginPageState extends State<LoginPage> {
                                                 .reset();
                                           });
 
-                                          Navigator.pushReplacementNamed(
-                                              context, HomePage.routeName);
+                                          Navigator.push(context, new MaterialPageRoute(
+                                            builder: (context) => new HomePage()
+                                              ));
                                         });
                                       } on TimeoutException catch (_) {
                                         const errorMessage =
@@ -454,16 +468,19 @@ class _LoginPageState extends State<LoginPage> {
                                   },
                                   child: Text(
                                     "LOGIN",
-                                    style: TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.bold),
+                                    style: GoogleFonts.lato(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w900,
+                                           color: Color.fromARGB(255, 0, 0, 0)
+                                        ),
                                   ),
                                   style: ElevatedButton.styleFrom(
                                       shape: new RoundedRectangleBorder(
                                         borderRadius:
                                         BorderRadius.circular(8),
+                              
                                       ),
-                                      primary: Theme.of(context).buttonColor),
+                                      primary: Theme.of(context).backgroundColor),
                                 ),
                               ),
                               Container(
@@ -474,15 +491,16 @@ class _LoginPageState extends State<LoginPage> {
                                     Text("Don't Have An Account?"),
                                     TextButton(
                                       onPressed: () {
-                                        // Navigator.pushNamed(
-                                        //     context, SignUpScreen.routeName);
+                                         Navigator.push(context, new MaterialPageRoute(
+                                           builder: (context) => new SignUpScreen()
+                                         ));
                                        // contractLink.addLocation("Colombo", "Thisis Colombo", "478596");
                                       },
                                       child: Text(
                                         "Sign Up",
                                         style: TextStyle(
                                             color:
-                                            Color.fromRGBO(0, 51, 52, 1)),
+                                            Color.fromARGB(255, 0, 0, 0)),
                                       ),
                                     ),
                                   ],

@@ -9,6 +9,7 @@ import 'package:flutter_dapp/models/recommended_model.dart';
 import 'package:flutter_dapp/models/popular_model.dart';
 
 class LandingPage extends StatefulWidget {
+  static const routeName = '/landingPage';
   /// Page Controller
   const LandingPage({Key? key}) : super(key: key);
   @override

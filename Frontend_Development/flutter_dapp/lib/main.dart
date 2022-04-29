@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
       initialRoute: auth.isAuth ? '/': LoginPage.routeName ,
 
     routes: {
-        '/' : (ctx) => HomePage(),
-    LoginPage.routeName : (ctx) => LoginPage(),
+        '/' : (ctx) => LoginPage(),
+        'second': (ctx) => HomePage()
 
     },
     ),),);
