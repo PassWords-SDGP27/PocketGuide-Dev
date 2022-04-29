@@ -3,10 +3,10 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:flutter_dapp/models/recommended_model.dart';
 import 'package:flutter_dapp/models/popular_model.dart';
-import 'package:flutter_dapp/pages/homeSubPages/selected_place_screen.dart';
 
 class LandingPage extends StatefulWidget {
   /// Page Controller
@@ -87,12 +87,6 @@ class _LandingPageState extends State<LandingPage> {
                 children: List.generate(
                   recommendations.length,
                   (int index) => GestureDetector(
-                    onTap:(){
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => SelectedPlaceScreen(
-                          recommendedModel:recommendations[index]
-                        )));
-                    },
                     child: Container(
                       margin: EdgeInsets.only(right: 28.8),
                       width: 333.6,
