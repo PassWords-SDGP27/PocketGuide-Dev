@@ -6,11 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dapp/contractLikings/contractLinking.dart';
 import 'package:flutter_dapp/models/httpException.dart';
 import 'package:flutter_dapp/pages/homePage.dart';
-
 import 'package:flutter_dapp/pages/signUpPage.dart';
 import 'package:flutter_dapp/providers/auth.dart';
 import 'package:flutter_dapp/widgets/errorAlertDialogWidget.dart';
-import 'package:flutter_dapp/widgets/pageTopTitile.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -31,9 +29,6 @@ class _LoginPageState extends State<LoginPage> {
     super.initState();
 
   }
-
-  final _resetPWFormKey = GlobalKey<FormState>();
-  String _resetEmail = "";
 
   final _loginFormKey = GlobalKey<FormState>();
   FocusNode _emailFocusNode = FocusNode();
@@ -68,148 +63,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  // void resetPassword() {
-  //   showDialog(
-  //       context: context,
-  //       builder: (BuildContext context) {
-  //         return AlertDialog(
-  //           contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 0),
-  //           buttonPadding: EdgeInsets.all(0),
-  //           content: Container(
-  //             margin: EdgeInsets.symmetric(vertical: 5),
-  //             //height: 500,
-  //             child: Container(
-  //               height: 200,
-  //               child: Form(
-  //                 key: _resetPWFormKey,
-  //                 child: Column(
-  //                   mainAxisSize: MainAxisSize.min,
-  //                   crossAxisAlignment: CrossAxisAlignment.center,
-  //                   children: <Widget>[
-  //                     Padding(
-  //                       padding: const EdgeInsets.symmetric(
-  //                           horizontal: 15, vertical: 20),
-  //                       child: Text(
-  //                         "Email your registered email below to receive password reset instruction",
-  //                         textAlign: TextAlign.center,
-  //                         style: TextStyle(
-  //                             fontSize: 12,
-  //                             color: Color.fromRGBO(0, 51, 52, 1)),
-  //                       ),
-  //                     ),
-  //                     Padding(
-  //                       padding: const EdgeInsets.symmetric(
-  //                           horizontal: 15, vertical: 20),
-  //                       child: TextFormField(
-  //                         autofocus: true,
-  //                         onChanged: (_emailValue) {
-  //                           if (EmailValidator.validate(_emailValue) == true) {
-  //                             setState(() {
-  //                               _correctEmail = true;
-  //                             });
-  //                             print(_correctEmail);
-  //                           } else {
-  //                             setState(() {
-  //                               _correctEmail = false;
-  //                             });
-  //                             print(_correctEmail);
-  //                           }
-  //                         },
-  //                         validator: (emailValidator) {
-  //                           if (EmailValidator.validate(emailValidator!) ==
-  //                               false) {
-  //                             return "Please enter a valid email.";
-  //                           } else
-  //                             return null;
-  //                         },
-  //                         onSaved: (_emailValue) {
-  //                           _resetEmail = _emailValue!;
-  //                         },
-  //                         key: ValueKey("resetEmail"),
-  //                         keyboardType: TextInputType.emailAddress,
-  //                         style: TextStyle(fontWeight: FontWeight.w500),
-  //                         decoration: InputDecoration(
-  //                           labelText: "Enter your Email",
-  //                           labelStyle: TextStyle(
-  //                             color: Color.fromRGBO(72, 72, 72, 1),
-  //                             fontSize: 14,
-  //                           ),
-  //                           border: UnderlineInputBorder(
-  //                             borderSide: BorderSide(
-  //                               color: Color.fromRGBO(126, 180, 181, 1),
-  //                               width: 2,
-  //                             ),
-  //                           ),
-  //                           focusedBorder: UnderlineInputBorder(
-  //                             borderSide: BorderSide(
-  //                               color: Color.fromRGBO(126, 180, 181, 1),
-  //                               width: 2,
-  //                             ),
-  //                           ),
-  //                         ),
-  //                       ),
-  //                     ),
-  //                   ],
-  //                 ),
-  //               ),
-  //             ),
-  //           ),
-  //           actions: [
-  //             Container(
-  //               width: MediaQuery.of(context).size.width,
-  //               height: 60,
-  //               child: ElevatedButton(
-  //                 style: ButtonStyle(
-  //                   backgroundColor: MaterialStateProperty.all(
-  //                     Color.fromRGBO(1, 161, 164, 1),
-  //                   ),
-  //                 ),
-  //                 onPressed: () async {
-  //                   if (_resetPWFormKey.currentState!.validate()) {
-  //                     _resetPWFormKey.currentState!.save();
-  //
-  //                     UserApis user = new UserApis();
-  //                     try {
-  //                       await user
-  //                           .resetPassword(_resetEmail)
-  //                           .then(ScaffoldMessenger.of(context).showSnackBar(
-  //                         SnackBar(
-  //                           content: const Text(
-  //                             "Password Reset Success!!. Please Check Your Email (Inbox or Spam)",
-  //                             textAlign: TextAlign.center,
-  //                           ),
-  //                         ),
-  //                       ));
-  //                     } on TimeoutException catch (_) {
-  //                       showDialog(
-  //                           context: context,
-  //                           builder: (BuildContext context) {
-  //                             return ErrorAlertDialogWidget(
-  //                               title: "Time out!",
-  //                               message:
-  //                               'Could not make connection. Please try again later.',
-  //                             );
-  //                           });
-  //                     } on HttpException catch (error) {
-  //                       showDialog(
-  //                           context: context,
-  //                           builder: (BuildContext context) {
-  //                             return ErrorAlertDialogWidget(
-  //                               title: "Registration Failed!",
-  //                               message: error.toString(),
-  //                             );
-  //                           });
-  //                     }
-  //                   }
-  //                 },
-  //                 child: Text("SEND"),
-  //               ),
-  //             )
-  //           ],
-  //         );
-  //       });
-  // }
-
+ 
   @override
   Widget build(BuildContext context) {
     var contractLink = Provider.of<ContractLinking>(context);
@@ -231,16 +85,6 @@ class _LoginPageState extends State<LoginPage> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        // appBar: AppBar(
-        //   leading: IconButton(
-        //     icon: Icon(Icons.arrow_back_ios_outlined),
-        //     onPressed: () {
-        //       Navigator.of(context).pop();
-        //     },
-        //   ),
-        //   backgroundColor: Colors.transparent,
-        //   elevation: 0,
-        // ),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Container(
@@ -494,7 +338,7 @@ class _LoginPageState extends State<LoginPage> {
                                          Navigator.push(context, new MaterialPageRoute(
                                            builder: (context) => new SignUpScreen()
                                          ));
-                                       // contractLink.addLocation("Colombo", "Thisis Colombo", "478596");
+                                       // contractLink.getUser(email,password);
                                       },
                                       child: Text(
                                         "Sign Up",
