@@ -81,10 +81,11 @@ class ContractLinking extends ChangeNotifier{
         ContractAbi.fromJson(_abiCode2, "User"), _contractAddress2);
 
     // Extracting the functions, declared in contract.
-    _addLocation = _contract1.function("addLocation");
+    /*_addLocation = _contract1.function("addLocation");
     _getLocation = _contract1.function("getLocation");
     _createUser = _contract2.function("createUser");
-    _getUser = _contract2.function("getUser");
+    _getUser = _contract2.function("getUser");*/
+    
     // _addLocation = _contract2.function("createUser");
     // _getLocation = _contract2.function("getUser");
     //addLocation();
