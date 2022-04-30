@@ -21,8 +21,6 @@ class _LandingPageState extends State<LandingPage> {
   final _pageController = PageController();
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Color.fromARGB(149, 110, 112, 113),
-
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(

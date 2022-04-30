@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter_dapp/widgets/ArCoreController.dart';
 import 'package:flutter_dapp/contractLikings/contractLinking.dart';
 import 'package:flutter_dapp/pages/homePage.dart';
+import 'package:flutter_dapp/pages/SplashScreen.dart';
 
 import 'package:flutter_dapp/pages/loginPage.dart';
 import 'package:flutter_dapp/providers/auth.dart';
@@ -31,12 +32,12 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: auth.isAuth ? '/': LoginPage.routeName ,
+      initialRoute: auth.isAuth ? '/': SplashScreen.routeName ,
 
     routes: {
-        '/' : (ctx) => LoginPage(),
-        'second': (ctx) => HomePage()
-
+        '/' : (ctx) => SplashScreen(),
+        'second': (ctx) => LoginPage(),
+        'third': (ctx) => HomePage()
     },
     ),),);
   }
