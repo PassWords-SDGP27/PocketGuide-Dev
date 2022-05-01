@@ -196,6 +196,7 @@ class _LoginPageState extends State<LoginPage> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
                                   ),
+                                  
                                   //show password functionality
                                   suffix: IconButton(
                                     icon: _showPassword

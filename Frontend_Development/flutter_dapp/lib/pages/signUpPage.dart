@@ -93,7 +93,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         semanticChildCount: 20,
                         children: <Widget>[
                           SizedBox(height: 5),
-                          //                                                    Full name field
+                          
+                          //Full name field
                           TextFormField(
                             autofocus: false,
                             focusNode: _fullNameFocusNode,
@@ -158,7 +159,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             ),
                           ),
 
-                          //                                                    email field
+                          //email field
                           TextFormField(
                             autofocus: false,
                             focusNode: _emailFocusNode,
@@ -223,7 +224,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             ),
                           ),
 
-                          //                                                     password field
+                          //password field
                           TextFormField(
                             autofocus: false,
                             obscureText: _showPassword,
@@ -290,7 +291,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             },
                           ),
                           //SizedBox(height: 5),
-                          //                                                    Confirm password field
+                          //Confirm password field
                           TextFormField(
                             autofocus: false,
                             obscureText: true,
@@ -313,13 +314,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 color: Color.fromRGBO(72, 72, 72, 1),
                                 fontSize: 14,
                               ),
-                              //show password functionality
-                              // suffixIcon: Icon(
-                              //   Icons.visibility_off,
-                              //   size: 18,
-                              //   color: Color.fromRGBO(72, 72, 72, 1),
-                              // ),
-
+                             
                               border: UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Colors.white,
