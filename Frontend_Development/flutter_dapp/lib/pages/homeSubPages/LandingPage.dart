@@ -3,7 +3,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:flutter_dapp/models/recommended_model.dart';
 import 'package:flutter_dapp/models/popular_model.dart';
@@ -21,8 +20,6 @@ class _LandingPageState extends State<LandingPage> {
   final _pageController = PageController();
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Color.fromARGB(149, 110, 112, 113),
-
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -96,6 +93,7 @@ class _LandingPageState extends State<LandingPage> {
                         borderRadius: BorderRadius.circular(9.6),
                         image: DecorationImage(
                           fit: BoxFit.cover,
+                          //Load image from the recommendations model
                           image: CachedNetworkImageProvider(
                               recommendations[index].image),
                         ),
@@ -160,25 +158,28 @@ class _LandingPageState extends State<LandingPage> {
             ),
 
             /// Text Widget for Popular Categories
-            Padding(
-              padding: EdgeInsets.only(top: 48, left: 28.8, right: 28.8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    child: FittedBox(
-                      child: Text(
-                        'Popular Destinations',
-                        style: GoogleFonts.playfairDisplay(
-                          fontWeight: FontWeight.w700,
-                          color: Color(0xFF000000),
+              Container(
+              height: 30,
+              margin: EdgeInsets.only(left: 14.4, top: 28.8),
+              child: DefaultTabController(
+                length: 1,
+                child: TabBar(
+                    labelPadding: EdgeInsets.only(left: 16.4, right: 16.4),
+                    indicatorPadding: EdgeInsets.only(left: 16.4, right: 16.4),
+                    isScrollable: true,
+                    labelColor: Color(0xFF000000),
+                    unselectedLabelColor: Colors.white,
+                    labelStyle: GoogleFonts.lato(
+                        fontSize: 14, fontWeight: FontWeight.w700),
+                    unselectedLabelStyle: GoogleFonts.lato(
+                        fontSize: 14, fontWeight: FontWeight.w700),
+                    tabs: [
+                      Tab(
+                        child: Container(
+                          child: Text('POPULAR DESTINATIONS'),
                         ),
                       ),
-                    ),
-                  ),
-                ],
+                    ]),
               ),
             ),
 

@@ -16,15 +16,13 @@
     <list default="true" id="7cecd461-3d4b-430b-9c11-08cc0c603339" name="Default Changelist" comment="" />
 =======
     <list default="true" id="3b604d08-a1da-41a6-92be-dec74d18b7d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/PocketGuide-Dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/PocketGuide-Dev.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_dapp/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_dapp/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_dapp/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_dapp/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/android/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_dapp/lib/mdels/httpException.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/lib/models/httpException.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_dapp/lib/mdels/location_result.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/lib/models/location_result.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_dapp/lib/pages/homeSubPages/locationSelectorPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/lib/pages/homeSubPages/locationSelectorPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_dapp/lib/pages/loginPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/lib/pages/loginPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_dapp/lib/pages/signUpPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/lib/pages/signUpPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_dapp/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_dapp/pubspec.yaml" afterDir="false" />
     </list>
 >>>>>>> Feature/Backend-0027
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +72,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
