@@ -17,6 +17,7 @@ class _SearchLocationState extends State<SearchLocation> {
   var locInfo;
 
   getItemAndNavigate(BuildContext context) {
+    //Navigate to ShowDetails page when button clicked
     Navigator.push(
         context,
         MaterialPageRoute(

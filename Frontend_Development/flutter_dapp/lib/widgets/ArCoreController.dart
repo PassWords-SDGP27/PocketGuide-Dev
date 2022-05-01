@@ -22,17 +22,7 @@ class _ARCoreControllerState extends State<ARCoreController> {
   _onArCoreViewCreated(ArCoreController controller){
     arCoreController = controller;
     _addToon(arCoreController);
-    //arCoreController.onPlaneDetected = _handleOnPlaneDetected;
   }
-
-/*_handleOnPlaneDetected(ArCorePlane plane){
-  if(node!=null){
-    arCoreController.removeNode(nodeName: node.name);
-    //# 20190295 I.S.U.Perera
-  }
-  _addToon(arCoreController, plane);
-}*/
-
   _addToon(ArCoreController controller){
     final node = ArCoreReferenceNode(
       name: 'Toon',
@@ -62,5 +52,5 @@ class _ARCoreControllerState extends State<ARCoreController> {
       child: ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,
         enableUpdateListener: true,),
     );
-  }//# 20190295 I.S.U.Perera
+  }
 }

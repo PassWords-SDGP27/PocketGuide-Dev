@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: auth.isAuth ? '/': SplashScreen.routeName ,
 
+    //Route create in order to navigate from screen to screen
     routes: {
         '/' : (ctx) => SplashScreen(),
         'second': (ctx) => LoginPage(),
