@@ -28,7 +28,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -70,7 +71,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -89,7 +91,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -102,7 +105,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -121,7 +125,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -164,7 +169,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -187,7 +193,8 @@
       "name": "verifyLocation",
       "outputs": [],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -200,7 +207,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_locationName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_locationDesc\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_longLat\",\"type\":\"string\"}],\"name\":\"addLocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_locName\",\"type\":\"string\"}],\"name\":\"deleteLocation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_locationName\",\"type\":\"string\"}],\"name\":\"findLocation\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLocation\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"locations\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"locationName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"locationDesc\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"longLat\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"longitude\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"latitude\",\"type\":\"int256\"},{\"internalType\":\"string\",\"name\":\"locationName\",\"type\":\"string\"}],\"name\":\"verifyLocation\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"viewAllLocations\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"locationName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"locationDesc\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"longLat\",\"type\":\"string\"}],\"internalType\":\"struct Location.LocationStruct[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_locationName\",\"type\":\"string\"}],\"name\":\"viewDesc\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"viewLocationName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_locationName\",\"type\":\"string\"}],\"name\":\"viewLongLat\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Location.sol\":\"Location\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Location.sol\":{\"keccak256\":\"0xaad454fc70226fecb44f530da41850e0a96149fa33c6eef0a9419d8a97eb846e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cf76c2cf8c19ab849799ba8652fb40e32b81e0b765c593c1abbe50abd83ce0d8\",\"dweb:/ipfs/QmUeoWvihFPkzw3xZp85wJ5Nz79zSvc3v9anPPqNpsQyfw\"]}},\"version\":1}",
@@ -13053,12 +13061,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xA84312f64A6B1dB1F3545f3523b97401381e95a4",
-      "transactionHash": "0x3f7ea5809a7bdf4faab743dbb8c293f86ce5c5258a1a23a4af171cc8b0238683"
+      "address": "0xE079bce145C1228811B2F334ad77336fd2F2BC3C",
+      "transactionHash": "0xc0038b48234e43e612bbaea12adc0a4b61553fbe4dff06821474796e997ff085"
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-23T04:02:27.972Z",
+  "updatedAt": "2022-05-01T04:06:26.746Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
