@@ -32,7 +32,16 @@ class ContractLinking extends ChangeNotifier {
     initialSetup();
   }
 
-  //***********************************************************************
+  initialSetup() async {
+    _client = Web3Client(_rpcUrl, Client(), socketConnector: () {
+      return IOWebSocketChannel.connect(_wsUrl).cast<String>();
+    });
+
+    // await getAbi();
+    // await getCredentials();
+    // await getDeployedContract();
+  }
+  
   //loading location contract
   Future<DeployedContract> loadContract1() async {
     String abiStringFile1 =
@@ -132,17 +141,6 @@ class ContractLinking extends ChangeNotifier {
         'verifyLocation', [locationName], ethClient, _user1_private_key);
     print("Verified location");
     return response;
-  }
-  //***********************************************************************
-
-  initialSetup() async {
-    _client = Web3Client(_rpcUrl, Client(), socketConnector: () {
-      return IOWebSocketChannel.connect(_wsUrl).cast<String>();
-    });
-
-    // await getAbi();
-    // await getCredentials();
-    // await getDeployedContract();
   }
 
 }
