@@ -9,12 +9,7 @@ import 'package:web_socket_channel/io.dart';
 class ContractLinking extends ChangeNotifier{
   final String _rpcUrl = "HTTP://10.0.2.2:7545";
   final String _wsUrl = "ws://10.0.2.2:7545/";
-  //final String _privateKey = "cbc704639d8eaaa639d026aebddbdec9595fb0dbf172c78f2754fbbf4767a4b2";
-
-  final String _owner_private_key = "cbc704639d8eaaa639d026aebddbdec9595fb0dbf172c78f2754fbbf4767a4b2"; //Metamask - Account 2, Ganache Account 1
-  final String _user1_private_key = "277245588c69f25be5f820eeb396814e91220adcaa153e7e6e6cdcc33e2502a2"; //Metamask - Account 3, Ganache Account 2
-  final String _contract1Address = "0xE079bce145C1228811B2F334ad77336fd2F2BC3C";//location contract
-  final String _contract2Address = "0xE079bce145C1228811B2F334ad77336fd2F2BC3C";//0x016fD2E2b455Ff49188c9d23A1caACCaC8585220
+  final String _privateKey = "a0f30820624a6eace9370f28f4fb6903483e7bc8479591d76f4f6c467da89e4c";
 
   late Web3Client _client;
   bool isLoading = true;
@@ -38,45 +33,6 @@ class ContractLinking extends ChangeNotifier{
   ContractLinking() {
     initialSetup();
   }
-
-  // //***********************************************************************
-  // //loading location contract
-  // Future<DeployedContract> loadContract1() async{
-  //   String abiStringFile1 = await rootBundle.loadString("src/artifacts/Location.json");
-  //   String contract1Address = _contract1Address;
-  //   final contract = DeployedContract(ContractAbi.fromJson(abiStringFile1, 'Location'), EthereumAddress.fromHex(contract1Address));
-  //   return contract;
-  // }
-  //
-  // //loading user contract
-  // Future<DeployedContract> loadContract2() async{
-  //   String abiStringFile2 = await rootBundle.loadString("src/artifacts/User.json");
-  //   String contract2Address = _contract2Address;
-  //   final contract = DeployedContract(ContractAbi.fromJson(abiStringFile2, 'User'), EthereumAddress.fromHex(contract2Address));
-  //   return contract;
-  // }
-  //
-  // //calling functions in backend location Contract
-  // Future<String> callFunctionInContract1(String funcName, List<dynamic> args, Web3Client ethClient, String privateKey) async {
-  //   EthPrivateKey credentials = EthPrivateKey.fromHex(privateKey);
-  //   DeployedContract contract1 = await loadContract1();
-  //   final ethFunction = contract1.function(funcName);
-  //   final result = await ethClient.sendTransaction(_credentials, Transaction.callContract(contract: contract1, function: ethFunction, parameters: args));
-  //   return result;
-  // }
-  //
-  // //calling functions in backend user Contract
-  // Future<String> callFunctionInContract2(String funcName, List<dynamic> args, Web3Client ethClient, String privateKey) async {
-  //   EthPrivateKey credentials = EthPrivateKey.fromHex(privateKey);
-  //   DeployedContract contract2 = await loadContract2();
-  //   final ethFunction = contract2.function(funcName);
-  //   final result = await ethClient.sendTransaction(_credentials, Transaction.callContract(contract: contract2, function: ethFunction, parameters: args));
-  //   return result;
-  // }
-  //
-  // //create user up function
-  // Future<String> createUser(String email, String username, String password, string memory _tellNo)
-  // //***********************************************************************
 
   initialSetup() async {
 
@@ -107,12 +63,12 @@ class ContractLinking extends ChangeNotifier{
     _contractAddress1 =
         EthereumAddress.fromHex(jsonAbi1["networks"]["5777"]["address"]);
     _contractAddress2 =
-        EthereumAddress.fromHex(jsonAbi2["networks"]["5777"]["address"]);
+        EthereumAddress.fromHex(jsonAbi1["networks"]["5777"]["address"]);
   }
 
   Future<void>   getCredentials() async {
     // ignore: deprecated_member_use
-    _credentials = await _client.credentialsFromPrivateKey(_owner_private_key);
+    _credentials = await _client.credentialsFromPrivateKey(_privateKey);
   }
 
   Future<void> getDeployedContract() async {
@@ -129,12 +85,11 @@ class ContractLinking extends ChangeNotifier{
     _getLocation = _contract1.function("getLocation");
     _createUser = _contract2.function("createUser");
     _getUser = _contract2.function("getUser");*/
-
+    
     // _addLocation = _contract2.function("createUser");
     // _getLocation = _contract2.function("getUser");
     //addLocation();
   }
-
 
   getUser() async {
 

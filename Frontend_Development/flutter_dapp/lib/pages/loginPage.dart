@@ -335,7 +335,7 @@ class _LoginPageState extends State<LoginPage> {
                                          Navigator.push(context, new MaterialPageRoute(
                                            builder: (context) => new SignUpScreen()
                                          ));
-                                       //contractLink.getUser(email,password);
+                                       // contractLink.getUser(email,password);
                                       },
                                       child: Text(
                                         "Sign Up",
