@@ -35,10 +35,6 @@ class ContractLinking extends ChangeNotifier {
     _client = Web3Client(_rpcUrl, Client(), socketConnector: () {
       return IOWebSocketChannel.connect(_wsUrl).cast<String>();
     });
-
-    // await getAbi();
-    // await getCredentials();
-    // await getDeployedContract();
   }
 
   //loading location contract

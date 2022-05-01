@@ -698,11 +698,7 @@
       "languageVersion": "2.14"
     }
   ],
-<<<<<<< HEAD
-  "generated": "2022-04-29T15:05:50.912529Z",
-=======
-  "generated": "2022-05-01T17:08:59.797375Z",
->>>>>>> Feature/Backend-0027
+  "generated": "2022-05-01T19:10:06.657795Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
