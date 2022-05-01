@@ -10,6 +10,7 @@ class ContractLinking extends ChangeNotifier {
   final String _rpcUrl = "HTTP://10.0.2.2:7545";
   final String _wsUrl = "ws://10.0.2.2:7545/";
 
+  //Ganache Workspace - SPURIOUS-MILK
   final String _owner_private_key =
       "cbc704639d8eaaa639d026aebddbdec9595fb0dbf172c78f2754fbbf4767a4b2"; //Metamask - Account 2, Ganache Account 1
   final String _user1_private_key =
