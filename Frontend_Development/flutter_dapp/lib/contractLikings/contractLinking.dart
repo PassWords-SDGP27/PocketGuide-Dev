@@ -89,19 +89,19 @@ class ContractLinking extends ChangeNotifier{
   }
   //***********************************************************************
 
-  // initialSetup() async {
-  //
-  //   // establish a connection to the ethereum rpc node. The socketConnector
-  //   // property allows more efficient event streams over websocket instead of
-  //   // http-polls. However, the socketConnector property is experimental.
-  //   _client = Web3Client(_rpcUrl, Client(), socketConnector: () {
-  //     return IOWebSocketChannel.connect(_wsUrl).cast<String>();
-  //   });
-  //
-  //   await getAbi();
-  //   await getCredentials();
-  //   await getDeployedContract();
-  // }
+  initialSetup() async {
+
+    // establish a connection to the ethereum rpc node. The socketConnector
+    // property allows more efficient event streams over websocket instead of
+    // http-polls. However, the socketConnector property is experimental.
+    _client = Web3Client(_rpcUrl, Client(), socketConnector: () {
+      return IOWebSocketChannel.connect(_wsUrl).cast<String>();
+    });
+
+    // await getAbi();
+    // await getCredentials();
+    // await getDeployedContract();
+  }
   //
   // Future<void> getAbi() async {
   //
