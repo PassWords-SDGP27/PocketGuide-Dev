@@ -66,8 +66,14 @@ contract Location {
     }
 
     //Function that validates a user input as a new loation
-    function verifyLocation(int longitude, int latitude, string memory locationName) external view{
+    function verifyLocation(string memory _locationName) external {
+        uint locId = findLocation(_locationName);
+        locations[locId].isVerified = true;
+    }
 
+    function checkVerification(string memory _locationName) external view returns (bool){
+        uint locId = findLocation(_locationName);
+        return locations[locId].isVerified;
     }
 
     function getLocation() external view returns (string memory){
