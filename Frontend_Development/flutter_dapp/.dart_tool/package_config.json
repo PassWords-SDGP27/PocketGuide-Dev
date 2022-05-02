@@ -566,12 +566,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "smooth_page_indicator",
-      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/smooth_page_indicator-0.2.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.5"
-    },
-    {
       "name": "source_span",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1",
       "packageUri": "lib/",
@@ -698,7 +692,7 @@
       "languageVersion": "2.14"
     }
   ],
-  "generated": "2022-05-01T17:15:15.549937Z",
+  "generated": "2022-05-02T01:21:41.124211Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

@@ -29,7 +29,6 @@ dependencies:
   web_socket_channel: ^2.1.0
   flutter_svg: ^0.22.0
   google_fonts: ^2.1.0
-  smooth_page_indicator: ^0.2.3
   cached_network_image: ^3.0.0
   device_preview: ^1.0.0
   cupertino_icons: ^1.0.3
