@@ -1,0 +1,5 @@
+Django
+djangorestframework
+djangorestframework-simplejwt
+mysqlclient
+psycopg2-binary==2.8.6
