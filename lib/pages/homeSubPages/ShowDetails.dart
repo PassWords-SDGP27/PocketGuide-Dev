@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_dapp/models/recommended_model.dart';
@@ -14,15 +15,20 @@ class ShowDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var locInfo = " ";
+    var imageLink = "";
 
     if (nameHolder == 'Sigiriya') {
       locInfo = recommendations[0].description;
-    }
-    else if (nameHolder == 'Ella') {
+      imageLink = recommendations[0].image;
+
+    } else if (nameHolder == 'Ella') {
       locInfo = recommendations[1].description;
-    }
-    else if (nameHolder == 'Nuwara Eliya') {
+      imageLink = recommendations[1].image;
+
+    } else if (nameHolder == 'Nuwara Eliya') {
       locInfo = recommendations[2].description;
+      imageLink = recommendations[2].image;
+
     } else {
       locInfo = "Location Not Found";
     }
@@ -47,22 +53,47 @@ class ShowDetails extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: 80, left: 5.8),
             child: Text('Location Details',
-                style: GoogleFonts.playfairDisplay(fontSize: 24, fontWeight: FontWeight.w700,decoration: TextDecoration.none, color:Colors.black)),
+                style: GoogleFonts.playfairDisplay(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    decoration: TextDecoration.none,
+                    color: Colors.black)),
           ),
           Container(
-            padding: EdgeInsets.all(30.0),
+              padding: EdgeInsets.all(30.0),
               child: Text(
-            'Location Name: ' + nameHolder,
-            style: GoogleFonts.lato(fontSize: 24, fontWeight: FontWeight.w500, decoration: TextDecoration.none, color:Colors.black),
-            textAlign: TextAlign.center,
-          )),
+                'Location Name: ' + nameHolder,
+                style: GoogleFonts.lato(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    decoration: TextDecoration.none,
+                    color: Colors.black),
+                textAlign: TextAlign.center,
+              )),
           Container(
-            padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(10.0),
               child: Text(
-             locInfo,
-            style: TextStyle(fontSize: 22,color:Colors.black, decoration: TextDecoration.none),
-            textAlign: TextAlign.justify,
-            )),
+                locInfo,
+                style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                    decoration: TextDecoration.none),
+                textAlign: TextAlign.justify,
+              )),
+          Container(
+            margin: EdgeInsets.only(
+              right: 28.8,
+              left: 28.8,
+            ),
+            width: 333.6,
+            height: 218.4,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: CachedNetworkImageProvider(imageLink),
+              ),
+            ),
+          ),
           ElevatedButton(
             onPressed: () => goBack(context),
             child: Text(
