@@ -140,6 +140,8 @@ class _LandingPageState extends State<LandingPage> {
               ),
             ),
 
+         
+
             /// Text Widget for Popular Categories
               Container(
               height: 30,
